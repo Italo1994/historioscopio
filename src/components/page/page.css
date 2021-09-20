@@ -1,0 +1,17 @@
+.page {
+    background: radial-gradient(ellipse at center,
+        #00000000 0%,#57392400 32%,#a2836d 86%,#6f5f53 95%),
+        var(--page-background, url('./bg.jpg'));
+    background-blend-mode: color-burn;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-content {
+    display: flex;
+    justify-content: center;
+    max-width: 900pt;
+}

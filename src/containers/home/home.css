@@ -1,0 +1,54 @@
+#home {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e8e5de;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url('./bg.webp') repeat;
+    background-size: 100%;
+    filter: blur(15px);
+}
+
+#masked-bg {
+    position: fixed;
+    height: 100%;
+}
+
+#text {
+    max-width: 90%;
+    transform: translateY(-10%);
+}
+
+#logo {
+    max-width: 45%;
+    transform: translateX(11%);
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 500pt;
+    flex: 1;
+}
+
+#home-button {
+    max-width: 220pt;
+    padding: 9pt;
+    font-size: 2.8em;
+    margin-bottom: 55pt;
+}

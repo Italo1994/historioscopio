@@ -1,0 +1,71 @@
+language: pt_BR
+datetime: 1853
+scenario: >
+  Compartimento interno de navio negreiro (Deque) composto por escravos homens,
+  mulheres e crianças, todos despojados de suas roupas; alguns acorrentados,
+  outros enfermos; comida jogada no chão junto a folhas secas, etc;
+
+  X jornalista se depara com escravos continuando serem comercializados
+  diretamente da África
+
+
+background: import(../../assets/ship.png)
+
+
+subjects:
+- id: slave-1
+  name: Escravo 1
+
+- id: slave-2
+  name: Escravo 2
+
+
+artifacts:
+- id: the-slave-ship
+  type: text
+  position: [20, 40] # [left, top] a fake value for while.
+  title: O Navio Negreiro
+  author: Castro Alves
+  icon: navio-negriro.png
+  text: |
+    (...)
+
+    Senhor Deus dos desgraçados!
+    Dizei-me vós, Senhor Deus!
+    Se é loucura... se é verdade
+    Tanto horror perante os céus?!
+    Ó mar, por que não apagas
+    Co'a esponja de tuas vagas
+    De teu manto este borrão?...
+    Astros! noites! tempestades!
+    Rolai das imensidades!
+    Varrei os mares, tufão!
+
+    (...)
+
+    Castro Alves
+  ref: http://biblio.com.br/conteudo/CastroAlves/navionegreiro.htm
+
+- id: slaves-dialog
+  type: dialog
+  script:
+  - { type: highlight, artifact: the-slave-ship }
+  - type: talk
+    subject: slave-1
+    text: >
+      Quando teremos a nossa paz finalmente?
+  - type: talk
+    subject: slave-2
+    text: >
+      Pensamos que com essa nova lei não seríamos arrastados novamente da nossa
+      terra para todos esses lugares
+  - type: talk
+    subject: slave-1
+    text: >
+      Tantos de nós morremos, tantos de nós sofremos. Essa lei não surtiu efeito
+      imediato, é lei pra inglês ver!
+  - type: talk
+    subject: slave-2
+    text: >
+      Será que um dia esse tráfico todo vai parar? E essa lei vai impedir toda
+      essa exploração de nossos irmãos?

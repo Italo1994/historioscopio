@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Cookit;
+    src: url(./Cookit-Regular.woff) format('woff');
+}
+
+#historioscopio {
+    --accent-color: #EDB850;
+    --text-color: #373435;
+    --display-font-family: Cookit, "Arial Black", "Arial Bold", Gadget, sans-serif;
+}

@@ -1,0 +1,87 @@
+language: pt_BR
+date: 1850
+scenario: >
+  Prédio da Câmara do Deputados do segundo reinado imperial; entrada composta
+  por um corredor central e diversas cadeiras ao redor; ao final do corredor
+  um púlpito; ao centro duas pequenas mesas e o piso todo em cor de madeira;
+  há diversos parlamentares, todos vestidos adequadamente e ao centro os
+  personagens principais (Eusébio e General Britânico).
+
+background: import(../../assets/assembly.png)
+
+subjects:
+- id: journalist
+  name: Jornalista
+
+- id: eusebio
+  name: Eusébio de Queirós
+
+- id: army-general
+  name: General da Marinha da Grã-Bretanha
+
+
+artifacts:
+- id: aberdeen-act
+  type: image
+  position: [20, 40] # [left, top] in pixel, a fake value for while.
+  title: Lei Bill Aberdeen
+  icon: lei-bill-aberdeen-icon.png
+  full-image: lei-bill-aberdeen.jpg
+  description: >
+    Esta carta autorizava os britânicos a preder qualquer navio suspeito de
+    transportar escravos no oceano Atlântico.
+  ref: https://brasilescola.uol.com.br/historiab/bill-aberdeen.htm
+
+- id: eusebio-and-the-army-general-dialog
+  type: dialog
+  script:
+  - type: thinking
+    subject: journalist
+    text: >
+      Que interessante! Este é o ministro da Justiça do Brsil nessa época!
+      Eusébio Queiróz Coutinho Matoso da Câmara! E quem será essa outra pessoa?
+
+      Vou ficar de olho aqui
+  - type: talk
+    subject: eusebio
+    text: >
+      Quem é você? Mais alguém para me aborrecer com as leis escravistas?
+  - type: talk
+    subject: army-general
+    text: >
+      Eu sou general da marinha da Grã-Bretanha, vim trazer a atual legislação
+      britânica quanto aos escravos. A coroa britânica e a rainha Vitória exigem
+      um posicionamento da sua nação! Se tais práticas, que remetem a uma nação
+      não civilizada, persistirem, medidas cabíveis serão tomadas.
+  - { type: highlight, artifact: aberdeen-act }
+  - type: talk
+    subject: eusebio
+    text: >
+      Me aborrece bastante toda essa pressão. Diante de tantos problemas
+      jurídicos que venho a tratar, ainda por cima me vem isso!
+  - type: talk
+    subject: army-general
+    text: >
+      Espero que o senhor entenda as consequências que vocês virão a ter diante
+      de tamanha resistência à aderência aos nossos acordos quanto ao tráfico de
+      escravos.
+  - type: talk
+    subject: eusebio
+    text: >
+      Entendo perfeitamente, General! Nossa melhor escolha é concordar. Em breve
+      irei criar e assinar a lei, os senhores já podem parar de me cobrar tanto.
+  - type: thinking
+    subject: journalist
+    text: >
+      Fico imaginando se o Brasil aderir a essa lei, onde os fazendeiros irão
+      conseguir novas mãos de obra para as lavouras de café.
+  - type: thinking
+    subject: journalist
+    text: >
+      Com a existência de uma lei que proíba o tráfico de escravos, com certeza
+      vai ser um grande passo a caminho do fim da escravidão.
+  - type: thinking
+    subject: journalist
+    text: >
+      Com a aprovação dessa lei o que irá ocorrer com o tráfico interno?
+      principalmente entre o Rio de Janeiro e São Paulo.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="grad">
+   <stop offset="0" tyle="stop-color:#ffffff;stop-opacity:0" />
+   <stop offset="0.09" style="stop-color:#ffffff;stop-opacity:1" />
+   <stop offset="0.91" style="stop-color:#ffffff;stop-opacity:1" />
+   <stop offset="1" style="stop-color:#ffffff;stop-opacity:0" />
+  </linearGradient>
+  <mask id="mask">
+   <rect style="fill:url(#grad);" id="rect1000" width="1754" height="1198"/>
+  </mask>
+ </defs>
+ <image xlink:href="d5701d5b0b6dafda890626a7f2b80183.webp" mask="url(#mask)" width="1754" height="1198" preserveAspectRatio="xMidYMid slice" x="0" y="0" />
+</svg>

@@ -1,0 +1,73 @@
+.link-button {
+    background: transparent;
+    border: 0;
+    padding: 8pt;
+    margin-bottom: 16pt;
+    position: relative;
+    font-family: var(--display-font-family, san-serif);
+    font-size: 1.5em;
+    --button-inclination: -30deg;
+    --button-transition: transform 100ms, background 100ms;
+    --button-fast-transition: transform 100ms, background 100ms;
+    transition: var(--button-transition);
+    width: 100%;
+    z-index: 0;
+    color: var(--text-color, black);
+    cursor: pointer;
+}
+
+.link-button:before {
+    content: '';
+    transform: skewX(var(--button-inclination)) translate(4%, 12%);
+    transition: var(--button-transition);
+    display: block;
+    position: absolute;
+    width: 95.2%;
+    height: 100%;
+    background: var(--accent-color, black);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+}
+
+.link-button:after {
+    content: '';
+    transform: skewX(var(--button-inclination));
+    transition: var(--button-transition);
+    display: block;
+    position: absolute;
+    width: 94.9%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.link-button:hover {
+    transform: translate(-2%, -4%);
+}
+
+.link-button:hover:before {
+    transform: skewX(var(--button-inclination)) translate(8%, 24%);
+}
+
+.link-button:active {
+    transition: var(--button-fast-transition);
+    transform: translate(2%, 4%);
+}
+
+.link-button:active:before {
+    transition: var(--button-fast-transition);
+    transform: skewX(var(--button-inclination)) translate(4%, 16%);
+}
+
+.link-button:active:after {
+    transition: var(--button-fast-transition);
+    background: #ada696;
+}
+
+.link-button:focus {
+    outline: none;
+}

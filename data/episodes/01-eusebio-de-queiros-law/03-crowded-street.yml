@@ -1,0 +1,71 @@
+language: pt_BR
+datetime: 1858
+scenario: >
+  Rua pavimentada com diversos prédios históricos; vários escravos acorrentados;
+  senhores analisando os cativos; animais soltos na rua (cachorros, cavalos,
+  etc);
+
+  Nossx Jornalista se depara com um fazendeiro e interage com ele conversando
+  sobre o comércio de escravos e possíveis novos imigrantes
+
+
+background: import(../../assets/farm.png)
+
+
+subjects:
+- id: journalist
+  name: Jornalista
+
+- id: farmer
+  name: Fazendeiro
+
+
+artifacts:
+- id: farmer-dialog
+  type: dialog
+  script:
+  - type: talk
+    subject: farmer
+    text: >
+      Seria o senhor mais um imigrante europeu para trabalhar pra mim?
+  - type: talk
+    subject: journalist
+    text: >
+      Não senhor, estou aqui admirado com toda essa mudança. E gostaria de fazer
+      algumas perguntas, se me permite.
+  - type: talk
+    subject: farmer
+    text: >
+      Hmmm… Estou muito sem tempo. Então, se não for me tomar mais tempo que o
+      necessário, eu agradeço.
+  - type: talk
+    subject: journalist
+    text: >
+      Então, indo direto ao assunto, eu gostaria de saber o que o senhor tem
+      achado do fato de, mesmo após a Lei Eusébio de Queiroz ser aprovada, ainda
+      existir, mesmo sendo bem mais raro, tráfico internacional.
+  - type: talk
+    subject: farmer
+    text: >
+      Hmmm… é verdade, mas posso garantir de bom grado que nunca mais comprei
+      escravos africanos.
+  - type: thinking
+    subject: journalist
+    text: >
+      Após essa Lei o senhor irá manter apoio a sua Majestade Dom Pedro II?
+  - type: thinking
+    subject: journalist
+    text: >
+      Soube que ainda existe um tráfico interno, soube que está melhor que
+      antes, pois o preço do escravo aumentou. O que acha disso?
+  - type: thinking
+    subject: journalist
+    text: >
+      Soube de uma vinda de estrangeiros para o Brasil, você acredita que as
+      condições de trabalho para essa nova mão de obra será melhor em comparação
+      à antiga mão de obra escrava, visto as atrocidades cometidas nas lavouras
+      de café?
+  - type: talk
+    subject: farmer
+    text: >
+      Não irei lhe responder, rapaz. Isso não lhe diz respeito! Passar bem.

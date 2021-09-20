@@ -1,0 +1,40 @@
+.journal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24pt;
+    box-sizing: border-box;
+    --sidebar-size: 20%;
+}
+
+.container-button{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.journal-button-list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.journal-button-back {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 20px;
+    margin-left: 30px
+}
+
+.journal-image {
+    width: 60%;
+    border: 10px solid #F5DEB3;
+    box-sizing: border-box;
+}

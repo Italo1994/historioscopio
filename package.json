@@ -1,0 +1,50 @@
+{
+  "name": "historioscopio",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "mochapack --webpack-config webpack.config-test.js",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "history",
+    "education"
+  ],
+  "contributors": [
+    "Gabriel Araújo <gabriel.araujjo@ufrn.edu.br>"
+  ],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@svgr/webpack": "^4.3.3",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "js-yaml": "^3.13.1",
+    "loader-utils": "^1.2.3",
+    "mocha": "^6.2.2",
+    "mochapack": "^1.1.5",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-node-externals": "^1.7.2",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "uifx": "^2.0.3"
+  }
+}
